@@ -20,3 +20,7 @@ userId = 213
 let isAdmin : boolean = false
 
 isAdmin = true
+
+// todo undefine data type
+
+let x: undefined = undefined; // 
