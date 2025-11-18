@@ -26,4 +26,33 @@ let nameAndRoll: [string, number] = ["Person 1", 21] //! The main rule is strict
 
 // ? here is an example
 
-let destination: [string, string, number] = ["Dhaka", "Kurigram", 3]
+let destination: [string, string, number] = ["Dhaka", "Kurigram", 3] 
+
+// todo reference type : object 
+
+//? for three name 
+
+const user : {
+    firstName : string;
+    middleName : string;
+    lastName: string;
+    // age : Number,
+} = {
+    firstName : "Abdulla",
+    middleName: "AL",
+    lastName : "Noman",
+    // age: 21,
+}
+
+// todo here is some exception character here as a object  [ when i already declare the type here is now also required value now I have to define the value here]
+
+// ! issues : 01 . middleName should be optional chaining 
+
+const userTwo : {
+    firstName : string,
+    middleName ?: string, // here we already declare the option chaining 
+    lastName : string
+} = {
+    firstName : "Jhankar",
+    lastName : "Mahabub"
+}
