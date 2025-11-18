@@ -26,21 +26,21 @@ let nameAndRoll: [string, number] = ["Person 1", 21] //! The main rule is strict
 
 // ? here is an example
 
-let destination: [string, string, number] = ["Dhaka", "Kurigram", 3] 
+let destination: [string, string, number] = ["Dhaka", "Kurigram", 3]
 
 // todo reference type : object 
 
 //? for three name 
 
-const user : {
-    firstName : string;
-    middleName : string;
+const user: {
+    firstName: string;
+    middleName: string;
     lastName: string;
     // age : Number,
 } = {
-    firstName : "Abdulla",
+    firstName: "Abdulla",
     middleName: "AL",
-    lastName : "Noman",
+    lastName: "Noman",
     // age: 21,
 }
 
@@ -48,11 +48,38 @@ const user : {
 
 // ! issues : 01 . middleName should be optional chaining 
 
-const userTwo : {
-    firstName : string,
-    middleName ?: string, // here we already declare the option chaining 
-    lastName : string
+// const userTwo : {
+//     organization : "Softvence Agency", //? we will declare the value if your don't want to change that [ value => type : literal type]
+//     firstName : string,
+//     middleName ?: string, // here we already declare the option chaining 
+//     lastName : string,
+//     isMarried : boolean,
+// } = {
+//     organization : "Softvence Agency", // this data is new assignable?
+//     firstName : "Jhankar",
+//     lastName : "Mahabub",
+//     isMarried : true,
+// }
+
+// console.log(userTwo)
+// userTwo.organization = "Next Level Development"
+
+
+// !! here is other way to unchangeable vale 
+
+const userTwo: {
+    readonly organization: string, // access modifier
+    firstName: string,
+    middleName?: string, // here we already declare the option chaining 
+    lastName: string,
+    isMarried: boolean,
 } = {
-    firstName : "Jhankar",
-    lastName : "Mahabub"
+    organization: "Softvence Agency", // this data is new assignable?
+    firstName: "Jhankar",
+    lastName: "Mahabub",
+    isMarried: true,
 }
+
+// userTwo.organization = "Next Level Development"
+
+console.log(userTwo)
