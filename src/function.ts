@@ -29,3 +29,9 @@ const poorUser = {
 // console.log(poorUser.addBalance(1000))
 
 //todo use function in loop it's called "Call Back function"
+
+const arr: number[] = [1, 3, 5]
+
+const squareArr = arr.map((elem: number): number => elem * elem)
+
+console.log(squareArr);
