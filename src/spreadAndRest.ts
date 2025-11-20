@@ -30,7 +30,7 @@ const userInfo = { ...user, ...otherInfo }
 
 //todo Rest operator 
 
-const sendInvitation = (...friends: string[]) => {
+const sendInvitation = (...friends: string[]) => { //? Here i just use the rest operator to convert the string to a array because I need the whole thing as a Hero
 
     friends.forEach((friend: string) => console.log(`Send invitation to ${friend}`))
 }
