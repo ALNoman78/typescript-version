@@ -19,7 +19,7 @@ mixedArr.push(12); // ✔ Valid
 
 Another example:
 
-let mixedArrTwo: (string | number)[] = ["Noman", 21, "Person 2", 2, "Person 3", 3];
+** let mixedArrTwo: (string | number)[] = ["Noman", 21, "Person 2", 2, "Person 3", 3];
 mixedArrTwo.push(2); // ✔ Valid
 
 🎯 Tuples
