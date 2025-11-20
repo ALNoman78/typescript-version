@@ -10,7 +10,7 @@ const collageFriend = ["Mr. Person1", "Mr. Person2"]
 friends.push(...schoolFriend)
 friends.push(...collageFriend)
 
-console.log(friends);
+// console.log(friends);
 
 const user = {
     name: "Moule",
@@ -24,7 +24,15 @@ const otherInfo = {
 
 const userInfo = { ...user, ...otherInfo }
 
-console.log(userInfo) // ? user marge
+// ? user marge
+// console.log(userInfo)
 
 
-??
+//todo Rest operator 
+
+const sendInvitation = (...friends: string[]) => {
+
+    friends.forEach((friend: string) => console.log(`Send invitation to ${friend}`))
+}
+
+sendInvitation("Noman", "Moule", "Mohua", "Person1")
