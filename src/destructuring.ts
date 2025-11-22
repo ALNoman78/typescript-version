@@ -20,7 +20,7 @@ const { favoriteColor: myFavoriteColor, name: { middleName: myMiddleName } } = u
 
 // todo Array Destructuring in Typescript
 
-const friends = ["Person1", "Person2", "Person3"]
+const friends: [string, string, string] = ["Person1", "Person2", "Person3"]
 
 // ? Before Destructure
 
