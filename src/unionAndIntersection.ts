@@ -12,4 +12,29 @@ const getDashboard = (role: UserRole) => {
     }
 }
 
-console.log(getDashboard("user"))
+// console.log(getDashboard("user"))
+
+//todo intersection & type in TypeScript
+
+type Employee = {
+    id: number;
+    name: string;
+    phoneNumber: string;
+}
+
+type Manager = {
+    designation: string;
+    teamSize: number;
+}
+
+type EmployeeManger = Employee & Manager
+
+const Mondol: EmployeeManger = {
+    id: 123,
+    name: 'Noman',
+    phoneNumber: "01318-969328",
+    designation: "manager",
+    teamSize: 30,
+}
+
+console.log(Mondol)
