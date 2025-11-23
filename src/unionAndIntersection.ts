@@ -29,12 +29,31 @@ type Manager = {
 
 type EmployeeManger = Employee & Manager
 
-const Mondol: EmployeeManger = {
-    id: 123,
-    name: 'Noman',
-    phoneNumber: "01318-969328",
-    designation: "manager",
-    teamSize: 30,
+// const Mondol: EmployeeManger = {
+//     id: 123,
+//     name: 'Noman',
+//     phoneNumber: "01318-969328",
+//     designation: "manager",
+//     teamSize: 30,
+// }
+
+// console.log(Mondol)
+
+
+//todo practice session 
+
+type UserRole2 = 'admin' | 'user' | 'manager'
+
+const dashboardAccess = (role: UserRole2) => {
+    if (role === 'admin') {
+        return 'Admin Dashboard'
+    } else if (role === 'manager') {
+        return 'Manager dashboard'
+    } else if (role === 'user') {
+        return 'User dashboard'
+    } else {
+        return 'Guest dashboard'
+    }
 }
 
-console.log(Mondol)
+console.log(dashboardAccess("manager"))
