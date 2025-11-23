@@ -56,4 +56,32 @@ const dashboardAccess = (role: UserRole2) => {
     }
 }
 
-console.log(dashboardAccess("manager"))
+// console.log(dashboardAccess("manager"))
+
+
+// todo Practice [&] and Operation in Typescript
+
+type Employee2 = {
+    id: number;
+    name: string;
+    phoneNumber: string;
+}
+
+type Manager2 = {
+    designation: string;
+    teamSize: number;
+    behavior: string;
+}
+
+type EmployeeLineManager = Employee2 & Manager2
+
+const Person1: EmployeeLineManager = {
+    id: 12,
+    name: "Faltu Line Manager",
+    phoneNumber: '01318969328',
+    designation: 'Line Manager',
+    teamSize: 20,
+    behavior: 'The worst'
+}
+
+console.log(Person1)
