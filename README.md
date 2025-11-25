@@ -9,7 +9,7 @@ Adding a value of another type results in an error:
 
 bazarList.push(true); // ❌ Error: boolean is not assignable to string
 
-✅ 2. Union Type / Mixed Array
+## ✅ 2. Union Type / Mixed Array
 
 To store multiple types in an array, use union types:
 
@@ -22,7 +22,7 @@ Another example:
 ** let mixedArrTwo: (string | number)[] = ["Noman", 21, "Person 2", 2, "Person 3", 3];
 mixedArrTwo.push(2); // ✔ Valid
 
-🎯 Tuples
+## 🎯 Tuples
 
 A tuple is similar to an array but with:
 
