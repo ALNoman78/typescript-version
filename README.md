@@ -1,5 +1,5 @@
 📚 Arrays
-✅ 1. String Array
+## ✅ 1. String Array
 let bazarList: string[] = ["eggs", "milk", "sugar"];
 
 
