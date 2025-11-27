@@ -39,4 +39,24 @@ const resultWithTernary = isAuthenticated ? isAuthenticated : "You are Guest"
 const resultWithNullish = isAuthenticated ?? "You are guest"
 
 
-console.log({ resultWithTernary }, { resultWithNullish })
+// console.log({ resultWithTernary }, { resultWithNullish })
+
+// ? Optional Chaining in Typescript
+
+const user: {
+    address: {
+        city: string;
+        town: string;
+        postalCode?: number;
+    }
+} = {
+    address: {
+        city: "Dhaka",
+        town: "Mirpur",
+        // postalCode: 213
+    }
+}
+
+const postalCode = user?.address?.postalCode
+
+console.log(postalCode)
